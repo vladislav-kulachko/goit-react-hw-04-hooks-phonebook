@@ -18,7 +18,7 @@ export default function App() {
     [contacts]
   );
 
-  const onSubmit = ( name, number ) => {
+  const onSubmit = (name, number) => {
     if (contacts.find((contact) => contact.number === number)) {
       alert("Этот номер уже есть в списке");
     } else if (contacts.find((contact) => contact.name === name)) {
