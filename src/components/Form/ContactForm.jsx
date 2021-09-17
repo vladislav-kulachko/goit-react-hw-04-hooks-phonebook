@@ -13,6 +13,7 @@ export default function ContactForm({ onSubmit }) {
         setNumber(e.target.value);
         break;
       default:
+        throw new Error();
     }
   };
   const handlerSubmitFormClick = (e) => {
